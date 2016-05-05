@@ -1,0 +1,9 @@
+[package]
+name = "Undefined"
+version = "0.1.0"
+authors = ["tajoy <tj328111241@gmail.com>"]
+
+[dependencies]
+glium = "0.14.*"
+nphysics2d = "0.3.*"
+nphysics3d = "0.3.*"
