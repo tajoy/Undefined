@@ -1,18 +1,21 @@
 #[macro_use]
 extern crate undefined;
 
-// use undefined::core::application;
+use undefined::core::app::Application;
 
 #[derive(Debug)]
+#[allow(dead_code)]
 struct MyApp;
 
-impl undefined::core::applaction::Applaction for MyApp {
-    fn run(arg: [String]) -> i32 {
+impl Application for MyApp {
+    #[allow(unused_variables)]
+    fn on_start() {
         unimplemented!();
     }
-} 
+}
 
-
+#[allow(unused_variables)]
 fn main() {
-
+    let x:MyApp = MyApp{};
+    println!("{:?}", x);
 }
